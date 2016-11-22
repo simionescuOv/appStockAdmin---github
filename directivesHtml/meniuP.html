@@ -1,0 +1,23 @@
+ <section ng-controller='meniuPctrl' > 
+  <div >
+        <ul  class="list-group mb0" >   
+             <li  class="list-group-item farap" 
+                  ng-repeat="elm in itemsMeniu" 
+                  ng-show='elm.vizibil'
+                 
+             > 
+                 <a ng-click='apasItem($index,elm.nume)'>
+                      <div  ng-class='elm.tip'
+                      > 
+                         <span >{{elm.nume}}</span> 
+                         <span class='alinD padZeceDreapta' 
+                               ng-show='elm.semnF'>
+                            <span ng-class="elm.semnFcomutator"></span>
+                         </span>
+                     </div> 
+                      <div class="alinReset"></div>
+                 </a>
+             </li>
+        </ul> 
+   </div>
+ </section>

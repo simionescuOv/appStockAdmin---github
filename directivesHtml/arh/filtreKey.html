@@ -1,0 +1,15 @@
+ <section>
+     
+    <div>                                           <!--ListKey-->
+        <ul id='idLkey' class="list-group mb0" >            
+             <li  class="list-group-item farap" ng-repeat="elmK in viuuDate.a" > <!--vDateKey-->
+                 <a href="#alege" ng-click='apasElmKey($index,elmK.nume)'>
+                      <div class="inkey  elmkey" >
+                         <span ng-class='elmK.stare'></span> 
+                         <span >{{elmK.numeAfisat}}</span> </div> 
+                 </a>
+             </li>
+        </ul> 
+    </div> 
+   
+  </section>

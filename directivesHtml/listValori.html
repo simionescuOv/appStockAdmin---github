@@ -1,0 +1,38 @@
+<section ng-controller="pagCtrlVD" 
+         ng-init="arataData()" 
+>  
+    <section >
+            <div class="alinD">
+               <div class="XXXpagination-div">
+                    <ul class="pagination"
+                        style='margin: 10px 10px;'
+                    >
+                          <li ng-class="DisablePrevPage()">
+                            <a href ng-click="prevPage()">«</a> </li>
+                          <li>
+                            <a>{{crtPag.vd+1}} / {{nPagini.vd+1}}</a> </li>
+                          <li ng-class="DisableNextPage()">
+                            <a href ng-click="nextPage()">»</a> </li>
+                    </ul>  
+                </div>
+            </div>
+
+            <div class="alinReset"></div>
+     
+      </section>
+      <ul class="list-group mb0"  >          
+             <li class="list-group-item farap bcviolet" 
+                    ng-repeat="v in rezFiltre=(viuuDate.v  | filter:scrisu) | paginare:crtPag.vd*elementePerPagina.vd | limitTo: elementePerPagina.vd"  > 
+                  <a href='#inapoiLaFiltre'    
+                     ng-click="apasElmVal($index,v)"
+                     style='color:white;'
+                  >
+                    <div class="elmav">
+                      <div class="inav">
+                           <span >{{v}}</span>
+                      </div>
+                    </div>
+                  </a>
+            </li>
+      </ul> 
+</section>

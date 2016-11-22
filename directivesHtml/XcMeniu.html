@@ -1,0 +1,11 @@
+ <section>                             
+    <ul  class="list-group mb0" >  Activities          
+         <li  class="list-group-item farap" ng-repeat="elm in listActivitati" > 
+             <a ng-click='apasElmActivitati($index,elm.nume)'>
+                  <div class="inkey  elmkey" >
+                     <span ng-class='elm.stare'></span> 
+                     <span >{{elm.nume}}</span> </div> 
+             </a>
+         </li>
+    </ul> 
+ </section>

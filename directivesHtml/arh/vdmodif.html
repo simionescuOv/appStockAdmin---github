@@ -1,0 +1,21 @@
+<section >
+            <div class="inav" style="background-color: green; color: white;" >
+                <div class="alinS"> Alege : </div>
+               
+      
+          <ul class="list-group mb0" >          
+                    <li class="list-group-item farap" ng-repeat="v in rezVd=(vdDate.v  | filter:scrisu) | limitTo:13"  > 
+                      <a href='#inapoiLaFiltre'    ng-click="setVal($index,v)">
+                        <div class="elmav">
+                          <div class="inav">
+                               <span >{{v}}</span> </div>
+                        </div>
+                      </a>
+
+                    </li>
+          </ul> 
+       
+    
+    
+    
+</section>

@@ -1,0 +1,14 @@
+<section>
+    <h2>{{titlu}}</h2>
+    <div>{{XmListSA}}</div>
+    <ul class="list-group mb0">
+        <li class="list-group-item farap {{crtClasa}}"
+            ng-repeat='elm in vDatele.crtDatele.nume | filter:mListSA'
+            Xng-class='vDatele.crtDatele.tip[$index]'
+        > 
+            <span  ng-click='apasElm($index,elm)'
+            > {{elm}} 
+            </span>
+        </li>
+    </ul>
+</section>

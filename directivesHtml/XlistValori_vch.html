@@ -1,0 +1,38 @@
+<section ng-controller="pagCtrl" ng-init="showData()">
+    
+      <div  class="inav" style="background-color: blue; color: white;" >
+          <div id="alege" style="height:70px"></div>
+            <div class="alinS"> Alege {{crtNumek}} :  {{rezFiltre.length}} </div>
+            <div class="alinD">
+               <div class="pagination-div" ng-show='vizibil.pagViuu'>
+                    <ul class="pagination">
+                          <li ng-class="DisablePrevPage()">
+                            <a href ng-click="prevPage()">«</a></li>
+                          <li ng-repeat="n in range()" 
+                              ng-class="{active: n == currentPage}" 
+                              ng-click="setPage(n)">
+                            <a>{{n+1}}</a> </li>
+                          <li ng-class="DisableNextPage()">
+                            <a href ng-click="nextPage()">»</a>
+                          </li>
+                    </ul>  
+     </div>
+            </div>
+            <div class="alinReset"></div>
+      </div>
+    
+      <ul class="list-group mb0"  >          
+             <li class="list-group-item farap" 
+                    ng-repeat="v in rezFiltre=(viuuDate.v  | filter:scrisu) | paginare:currentPage*elementePerPagina | limitTo: elementePerPagina"  > 
+                 
+                  <a href='#inapoiLaFiltre'    ng-click="apasElmVal($index,v)">
+                    <div class="elmav">
+                      <div class="inav">
+                           <span >{{v}}</span> </div>
+                    </div>
+                  </a>
+            </li>
+      </ul> 
+    
+    
+</section>

@@ -1,0 +1,145 @@
+.bcsobolan{
+        background-color: rgba(0,0,0,.075);
+}
+.bcviolet{
+    background-color: #C80384;
+    color: white;
+}
+.infoli{
+    line-height: 1.2;
+}
+
+.unghiafoto{
+        padding: 5px;
+        margin-bottom: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+}
+.dinfo{
+    display: inline-block;
+  width: 185px;
+ //   height: 200px;
+}
+.dfoto{
+     //width: 145px;
+   // height: 200px;
+    float: left;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.poza{
+    background: url(../img/menu.jpg);
+    width: 96px;
+	height: 96px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.elmulli{
+    background-color: aliceblue;
+    margin-bottom: 5px;
+    list-style-type: none;
+    padding-left: 5px;
+    
+}
+.cadruElmAic{
+    //border: black 10px;
+}
+.elmFolder{ 
+    list-style-type: none;
+    background-color: #DFF0D8;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-top: 10px;
+}
+.folderu{ 
+    list-style-type: none;
+    background-color: #F2DEDE;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.element{ 
+    list-style-type: none;
+    background-color: #F2DEDE;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.titlu{ 
+    list-style-type: none;
+    background-color: rgba(55, 212, 146, 0.58);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.elmkey{
+   // margin: 10px 15px;
+    background-color: lemonchiffon;
+}
+.elmav{
+   // background-color: aliceblue;
+}
+.inkey{
+    padding: 10px 10px;
+}
+
+.inav{
+    padding: 5px 15px;
+}
+.farap{
+    padding: 0px 0px;
+}
+.mb0{ 
+   margin-bottom: 0px
+}
+.icbactiv{
+	background: url(../img/icb.png) no-repeat -1px -2.3px;
+}
+.icbinactiv{
+	background: url(../img/icb.png) no-repeat -30px -2.3px;
+}
+.icb{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}	
+.irbactiv{
+	background: url(../img/radio_button.png) no-repeat 3px 5px;
+}
+.irbinactiv{
+	background: url(../img/ui_radio_button_uncheck.png) no-repeat 3px 5px;
+}
+.irb{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.padZeceDreapta{
+    padding-right: 10px;
+}
+.alinS{
+    float:left;
+}
+.alinD{
+    float:right;
+    padding-top: 6px;
+    padding-right: 10px;
+}
+.alinReset{
+   clear: both;
+}
+.reglajH{
+    padding: 15px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.titluFVI{
+    background-color:black;
+    color: white;
+    padding: 5px 15px;
+} 

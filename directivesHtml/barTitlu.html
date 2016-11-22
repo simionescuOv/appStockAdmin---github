@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">     
+                <div class="input-group reglajH">
+                   <span class="input-group-addon"
+                           ng-click='apasButonMeniu()'
+                   >
+                   <span class="glyphicon glyphicon-menu-hamburger"></span>
+                   </span>  
+
+                     <input   class="form-control" 
+                              placeholder={{textCautare}} 
+                              ng-show='vv.inpItems'
+                              ng-model='scrisu' 
+                              ng-focus="paginareViuu()"
+                              ng-change="seTasteaza()"
+                     >
+                    
+                     <input   class="form-control" 
+                              placeholder='Search or Add Locations'  
+                              ng-show='vv.inpListSA'
+                              ng-model='mListSA' 
+                              ng-change='inputListaSA()'
+                     >
+                    
+                    <span class="input-group-addon"
+                          ng-show='vv.butonPlus'
+                          ng-click='apasPlus()'
+                    >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    </span>
+                    
+                   <span  ng-show='rezFiltre.length==0' class="input-group-addon">
+                     <span class="glyphicon glyphicon-log-out"></span>
+                   </span>
+                </div>
+             
+             <meniuviuutag ng-show='vv.meniu'></meniuviuutag>
+        </div>
+</nav>   

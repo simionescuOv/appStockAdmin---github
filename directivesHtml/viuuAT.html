@@ -1,0 +1,25 @@
+<section>
+    <h2>Activitati transfer in locatia {{viuuCrtLoc}} :</h2>
+    <ul class="list-group mb0">
+        <li class="list-group-item farap"
+            ng-repeat='elm in arrViuuData.activitati'
+            ng-hide='elm.invizibil'
+            ng-click='apasElmAT($index,elm)'
+            ng-class='elm.clasa'
+        > <span>
+            <span class='glyphicon glyphicon-ok'
+                  ng-show='elm.bifat'
+                  ></span>
+            <span 
+            > {{elm.numeUser}} </span>
+            <span class='glyphicon glyphicon-menu-right alinD'
+                  ng-show='elm.semnGrup'
+                  style="padding-top: 5px; padding-right: 10px;"
+                  ></span>
+            <span 
+        </span>
+        <span class="alinReset"></span>
+            
+        </li>
+    </ul>
+</section>

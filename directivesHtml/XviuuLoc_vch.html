@@ -1,0 +1,19 @@
+<section>
+    <h2>{{locatiiTitlu}}</h2>
+    <div>{{mLocatii}}</div>
+    <ul class="list-group mb0">
+        <li class="list-group-item farap"
+            ng-repeat='elm in arrViuuData.locatii | filter:mLocatii'
+            ng-hide='elm.invizibil'
+            ng-class='elm.tip'
+        > 
+            <span class='glyphicon glyphicon-ok'
+                  ng-show='elm.bifat'
+            >
+            </span>
+            <span  ng-click='apasElmLoc($index,elm)'
+            > {{elm.numeUser}} 
+            </span>
+        </li>
+    </ul>
+</section>

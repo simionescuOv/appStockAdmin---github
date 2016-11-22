@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stocAdmin</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <script src="js/angular.min.js"></script>
+      <script src="js/jquery-1.8.2.min.js"></script>
+   <!--   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>  
+    -->  
+    <link rel="stylesheet" href="css/stilu.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+       <script src="js/ftab_oAvdAim.js"></script> 
+       <script src="js/obLoco.js"></script>
+      <script src="js/datele.js"></script> 
+      <script src="js/controllersDoi.js"></script> 
+      <script src="js/declarDirectivele.js"></script>
+      
+      
+     
+      
+  </head>
+  <body style="background-color: rgba(42, 56, 42, 0.156863)">
+      
+    <div  ng-app='appStockAdmin' 
+          ng-controller='manageViuu'
+          ng-init="dsc('initial')"
+    >
+        <div style="height:80px;background-color:red;"></div>
+   <!--     <div ng-controller='listaInpCtrl'
+             Xng-init='testare()'
+        >
+                <vlistatag></vlistatag>
+        </div>
+    -->
+     <!--   
+        <meniuprincipaltag></meniuprincipaltag>
+     --> 
+        
+       <div ng-controller='dateleCtrl'
+             ng-init='XdateleInitial()'
+        >
+            <section ng-controller='meniuPctrl'>
+                 <bartitlutag ng-show='vv.barTitlu'></bartitlutag>
+                 <locatiiviuutag ng-show='vv.locatii'></locatiiviuutag>
+                 <activitativiuutag ng-show='vv.activitati'></activitativiuutag>
+            </section>
+            <fvitag ng-controller='mainFiltreCtrl'
+                    ng-show='vv.fvi'
+            >
+            </fvitag>
+            <itempagetag ng-controller='itemPage'
+                         ng-show='vv.itemPage'
+            ></itempagetag>
+           <vlistatag ng-controller='listaInpCtrl'
+           ></vlistatag>
+        </div> 
+   
+    </div>
+      
+    <div style="height:700px; background:rgba(42, 56, 42, 0.16);;"></div>
+      
+  <script>  </script>  
+     
+  </body>
+</html>
+

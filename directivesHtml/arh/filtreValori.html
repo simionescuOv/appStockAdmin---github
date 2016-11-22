@@ -1,0 +1,25 @@
+<section >
+            <div class="inav" style="background-color: blue; color: white;" >
+                <div class="alinS"> Alege {{crtNumek}} :  {{rezFiltre.length}} </div>
+                <div class="alinD">
+                    <button type="button"> + </button>
+                </div>
+                <div class="alinReset"></div>
+            </div>
+      
+          <ul class="list-group mb0" >            <!--valoareKey--> 
+                    <li class="list-group-item farap" ng-repeat="v in rezFiltre=(viuuDate.v  | filter:scrisu) | limitTo:23"  > 
+                      <a href='#inapoiLaFiltre'    ng-click="apasElmVal($index,v)">
+                        <div class="elmav">
+                          <div class="inav">
+                               <span >{{v}}</span> </div>
+                        </div>
+                      </a>
+
+                    </li>
+          </ul> 
+       
+    
+    
+    
+</section>

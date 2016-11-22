@@ -1,0 +1,25 @@
+<section  ng-show='vv.itemPage'>
+    <h1>{{numeElm}}</h1>
+    <ul class="list-group mb0">
+        <li class="farap"
+            ng-repeat='elm in aoViuuIP'
+            ng-click='apasElm(elm)'
+        > 
+            <span class='list-group-item'
+                  ng-class='elm.tip'>
+                <span class='glyphicon glyphicon-ok'
+                      ng-show='elm.bifat'
+                >
+                </span>
+                <span  
+                > {{elm.numeUser}} 
+                </span>
+                <span class='alinD'
+                      ng-class='elm.semnFold'
+
+                >
+                </span>
+            </span>
+        </li>
+    </ul>
+</section>

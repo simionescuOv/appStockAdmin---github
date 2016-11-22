@@ -1,0 +1,20 @@
+<section>
+    <h2>{{titlu}}</h2>
+    <div>{{XmListSA}}</div>
+    <ul class="list-group mb0">
+        <li class="list-group-item farap {{crtClasa}}"
+            ng-repeat='elm in vDatele.ii | filter:mListSA'
+            ng-class='getPrp("tip",$index)'
+        > 
+            <span ng-class='getPrp("bifat",$index)'
+            >
+            </span>
+            <span  ng-click='elmApasat($index,elm)'
+            > {{elm}} 
+            </span>
+            <span ng-class='getPrp("semnFold",$index)'
+            >
+            </span>
+        </li>
+    </ul>
+</section>

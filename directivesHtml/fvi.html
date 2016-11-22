@@ -1,0 +1,33 @@
+
+<div style="background-color: #9F9FDC;
+    color: white;">
+<h3>Locatie :</h3>
+<h2>{{viuuCrtLoc}}</h2>
+<h3>Activitate transfer :</h3>
+<h2>{{viuuCrtActivitate}}</h2>
+</div>
+
+<div id="inapoiLaFiltre" 
+         style="height:70px"
+    ></div>
+<div  ng-click="comutaVizibil('filtre')"
+      class='titluFVI'
+>filtre :</div>
+<div ng-show='vv.filtre'>
+    <filtretag 
+    ></filtretag>
+    
+    <div id="valorifiltre" 
+         style="height:70px"
+    ></div>
+    <div  class='titluFVI'>valori filtre : {{rezFiltre.length}}</div>
+    <valoritag
+    ></valoritag>  
+</div>
+
+
+<div  ng-click="XcomutaVizibil('rfitems')"
+      class='titluFVI'
+>items :   {{viuuDate.rf.length}}</div>
+<rfitemstag ng-show='vv.rfitems'
+></rfitemstag>
